@@ -199,8 +199,8 @@ public class Main {
 
     private static void showGameState(int mistakes, List<String> inputtedLetters) {
         printHangman(mistakes);
-        System.out.printf("Ошибок: %s из %s", mistakes, MAX_MISTAKES);
-        System.out.println("\nВведенные буквы: " + String.join(",", inputtedLetters));
+        System.out.printf("Ошибок: %d из %d%n", mistakes, MAX_MISTAKES);
+        System.out.println("Введенные буквы: " + String.join(",", inputtedLetters));
     }
 
     private static boolean isWin(String word, String maskedWord) {
